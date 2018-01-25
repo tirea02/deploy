@@ -91,7 +91,7 @@ if (cluster.isMaster) {
 
     var port = process.env.PORT || 9999;
 
-    var server = app.listen(port, "127.0.0.1", function () {
+    var server = app.listen(port, "0.0.0.0", function () {
         console.log('Server running at http://127.0.0.1:' + port + '/');
     });
 }
