@@ -89,9 +89,9 @@ if (cluster.isMaster) {
         });
     });
 
-    var port = process.env.PORT || 3000;
+    var port = process.env.PORT || 9999;
 
-    var server = app.listen(port, function () {
+    var server = app.listen(port, "127.0.0.1", function () {
         console.log('Server running at http://127.0.0.1:' + port + '/');
     });
 }
